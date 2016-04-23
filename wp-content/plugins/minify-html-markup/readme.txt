@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: minify, minifer, minification, HTML, fast, faster, speed, performance, optimize, optimization, downloading, beautify, beautifier, sloppy, clean, cleaner, markup, compress, css, javascript
 Requires at least: 1.5
 Tested up to: 4.5
-Stable tag: 1.6
+Stable tag: 1.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,7 @@ Ever look at the HTML markup of your website and notice how sloppy and amateuris
 
 Make your website's markup look professional by using Minify HTML. Simple to use, simply install and activate.
 
-Does specialized minification to JavaScript and internal CSS. Doesn't mess with your textareas or preformatted text. Also removes HTML comments (leaving MSIE conditional comments).
+Does specialized minification to JavaScript and internal CSS. Doesn't mess with your textareas or preformatted text. Also removes HTML, CSS and JavaScript comments (leaving MSIE conditional comments).
 
 
 == Installation ==
@@ -74,6 +74,12 @@ With Minify HTML, the source HTML file will be smaller, therefore, it will compr
 
 
 == Changelog ==
+
+= v1.7 - 4/21/2016 =
+* Now removes CSS and JavaScript comments.
+* Fixed issue with minification of internal CSS media queries.
+* Fixed issue with Google AMP reporting problems with the style boilerplate.
+* No longer minifies XML files (which Minify HTML was never designed to do).
 
 = v1.6 - 3/1/2016 =
 * Removes HTML comments to further reduce file size (doesn't remove MSIE conditional comments).

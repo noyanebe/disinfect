@@ -3,7 +3,7 @@
 Plugin Name: Minify HTML
 Plugin URI: https://wordpress.org/plugins/minify-html-markup/
 Description: Minify your HTML for faster downloading and cleaning up sloppy looking markup.
-Version: 1.6
+Version: 1.7
 Author: Tim Eckel
 Author URI: https://www.dogblocker.com
 License: GPLv3 or later
@@ -36,6 +36,7 @@ function teckel_init_minify_html() {
 }
 
 function teckel_minify_html_output($buffer) {
+	if (substr(ltrim($buffer),0,5)=='<?xml') return ($buffer);
 	$buffer = str_replace(array (chr(13) . chr(10), chr(9)), array (chr(10), ''), $buffer);
 	$buffer = str_ireplace(array ('<script', '/script>', '<pre', '/pre>', '<textarea', '/textarea>', '<style', '/style>'), array ('M1N1FY-ST4RT<script', '/script>M1N1FY-3ND', 'M1N1FY-ST4RT<pre', '/pre>M1N1FY-3ND', 'M1N1FY-ST4RT<textarea', '/textarea>M1N1FY-3ND', 'M1N1FY-ST4RT<style', '/style>M1N1FY-3ND'), $buffer);
 	$split = explode('M1N1FY-3ND', $buffer);
@@ -52,18 +53,17 @@ function teckel_minify_html_output($buffer) {
 					if ($split2[$iii]) $asis .= trim($split2[$iii]) . chr(10);
 				}
 				if ($asis) $asis = substr($asis, 0, -1);
+				$asis = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $asis);
 				$asis = str_replace(array (';' . chr(10), '>' . chr(10), '{' . chr(10), '}' . chr(10), ',' . chr(10)), array(';', '>', '{', '}', ','), $asis);
-			}
-			if (substr($asis, 0, 6) == '<style') {
-				$asis = preg_replace(array ('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s'), array('>', '<', '\\1'), $asis);
-				$asis = str_replace(array (chr(10), ' {', '{ ', ' }', '} ', ' (', '( ', ' )', ') ', ' :', ': ', ' ;', '; ', ' ,', ', ', ';}'), array('', '{', '{', '}', '}', '(', '(', ')', ')', ':', ':', ';', ';', ',', ',', '}'), $asis);
+			} else if (substr($asis, 0, 6) == '<style') {
+				$asis = preg_replace(array ('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '!/\*[^*]*\*+([^/][^*]*\*+)*/!'), array('>', '<', '\\1', ''), $asis);
+				$asis = str_replace(array (chr(10), ' {', '{ ', ' }', '} ', '( ', ' )', ' :', ': ', ' ;', '; ', ' ,', ', ', ';}'), array('', '{', '{', '}', '}', '(', ')', ':', ':', ';', ';', ',', ',', '}'), $asis);
 			}
 		} else {
 			$process = $split[$i];
 			$asis = '';
 		}
-		$process = preg_replace('/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/s', '', $process);
-		$process = preg_replace(array ('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s'), array('>', '<', '\\1'), $process);
+		$process = preg_replace(array ('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/s'), array('>', '<', '\\1', ''), $process);
 		$buffer .= $process.$asis;
 	}
 	$buffer = str_replace(array (chr(10) . '<script', chr(10) . '<style', '*/' . chr(10), 'M1N1FY-ST4RT'), array('<script', '<style', '*/', ''), $buffer);

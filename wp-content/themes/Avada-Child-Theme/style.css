@@ -1,4 +1,4 @@
-    /*
+/*
 Theme Name: Avada Child
 Description: Child theme for Avada theme
 Author: ThemeFusion
@@ -10,265 +10,277 @@ Text Domain:  Avada
 
 
 .abt_title h1.title-heading-center {
-    color: #333;
-    /*font-size: 50px;*/
+	color: #333;/*font-size: 50px;*/
 
 }
 .test_title h1 {
-    color: #ec592c !important;
+	color: #ec592c !important;
 }
 .get_in_title h1 {
-    color: #ec592c !important;
-    font-size: 60px !important;
-;
+	color: #ec592c !important;
+	font-size: 60px !important;
+	;
 }
-
 .para_one {
-    font-size: 23px;
-    line-height: 41px;
+	font-size: 23px;
+	line-height: 41px;
 }
-
 .benefit_title h1.title-heading-center {
-    color: #fff;
-   /* font-size: 50px;*/
+	color: #fff;/* font-size: 50px;*/
 
 }
-
 p.p_1 {
-    text-align: left;
-    font-size:24px;
-    line-height: 40px;
-    margin-top:35px;
+	text-align: left;
+	font-size: 24px;
+	line-height: 40px;
+	margin-top: 35px;
 }
 p.p_2 {
-    text-align: left;
-    font-size: 24px;
-    line-height: 40px;
+	text-align: left;
+	font-size: 24px;
+	line-height: 40px;
 }
 p.p_3 {
-    text-align: left;
-    font-size: 24px;
-    line-height: 40px;
+	text-align: left;
+	font-size: 24px;
+	line-height: 40px;
 }
-
 .services_title h1.title-heading-center {
-    color: #333;
-   /* font-size: 50px;*/
+	color: #333;/* font-size: 50px;*/
  
 }
 p span.sp_1 {
-    color: #fff !important;
-    font-size: 24px;
-    line-height: 49px;
+	color: #fff !important;
+	font-size: 24px;
+	line-height: 49px;
 }
 .pricing-table-1.full-boxed-pricing .panel-heading {
-   background-color: #25292b !important;
+	background-color: #25292b !important;
 }
 .full-boxed-pricing.fusion-pricing-table .panel-heading h3 {
-   color: #ee6059 !important;
+	color: #ee6059 !important;
 }
-.sep-boxed-pricing .panel-heading{    background-color:#ec592c !important;}
-
+.sep-boxed-pricing .panel-heading {
+	background-color: #ec592c !important;
+}
 .fusion-pricing-table .panel-body .price .integer-part {
-    color: #FFF !important;
+	color: #FFF !important;
 }
-.fusion-footer-copyright-area{padding-bottom:15px !important;}
+.fusion-footer-copyright-area {
+	padding-bottom: 15px !important;
+}
 a.fusion-social-network-icon.fusion-tooltip {
-    background-color: #ec592c !important;
-    color:#fff!important;
+	background-color: #ec592c !important;
+	color: #fff!important;
 }
 .fusion-copyright-notice div {
-    color: #fff !important;
+	color: #fff !important;
 }
-.wpcf7-form .wpcf7-text, input.s, input[type="text"]{
-    height:42px !important;
-
+.wpcf7-form .wpcf7-text, input.s, input[type="text"] {
+	height: 42px !important;
 }
 .content-box-heading {
-  font-size: 28px !important;
+	font-size: 28px !important;
 }
 .content-container {
-  font-size: 25px;
-  line-height: 34px;
-  margin-top: 16px;
+	font-size: 25px;
+	line-height: 34px;
+	margin-top: 16px;
 }
-a:hover{
- color:#ec592c !important;
+a:hover {
+	color: #ec592c !important;
 }
 .fusion-logo-1x.fusion-standard-logo {
-    width: 200px !important;
+	width: 200px !important;
 }
 .fusion-main-menu {
-   float: left !important;   
-   margin-left: 13%;
-   margin-top: 4%;
+	float: left !important;
+	margin-left: 13%;
+	margin-top: 4%;
 }
- .fusion-sticky-shadow .fusion-main-menu{
-   margin:0px 0px 0px 10% !important;
+.fusion-sticky-shadow .fusion-main-menu {
+	margin: 12px 0px 0px 10% !important;
 }
-.fusion-sticky-shadow li a{
-    padding: 0px 0px 0px 20px !important;
+.fusion-sticky-shadow .fusion-main-menu {
+	rgba(255, 255, 255, 0.38)
+}
+.fusion-sticky-shadow li a {
+	padding: 0px 0px 0px 20px !important;
 }
 .wpcf7 .icon-append.fa {
-  position: absolute;
-  top: 33%;
-  right: 4%;
-  font-size: 18px;
-  z-index: 100;
-  border-left: 1px solid;
-  padding-left: 10px;
-  height: 20px;
-
+	position: absolute;
+	top: 33%;
+	right: 4%;
+	font-size: 18px;
+	z-index: 100;
+	border-left: 1px solid;
+	padding-left: 10px;
+	height: 20px;
 }
 .icon-append.fa.fa-comment {
-  top: 37%;
-  right: 8%;
+	top: 37%;
+	right: 8%;
 }
 #text-3 h4 {
-  color: #fff;
-  font-size: 20px !important;
+	color: #fff;
+	font-size: 20px !important;
 }
-#text-3 .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-email{ 
-background-color:#fff;
+#text-3 .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-email {
+	background-color: #fff;
 }
-
 #text-3.wpcf7-form-control.wpcf7-submit {
-  width: 96% !important;
-  padding: 10px 0 10px 0 !important;
- background-color:#ec592c !important;
+	width: 96% !important;
+	padding: 10px 0 10px 0 !important;
+	background-color: #ec592c !important;
 }
-
 #text-4 h4 {
-  color: #fff;
-  font-size: 20px;
+	color: #fff;
+	font-size: 20px;
 }
- 
 #aboutus {
-    padding-top: 4%;
-    background: url("//dev-disinfect.c9users.io/wp-content/uploads/2016/04/slider_70640905-e1390422140138.jpg");
+	padding-top: 4%;
+	background: url("//dev-disinfect.c9users.io/wp-content/uploads/2016/04/slider_70640905-e1390422140138.jpg") 50% no-repeat;
+	background-size: cover;
 }
-
 #contactus {
-    background: url("//dev-disinfect.c9users.io/wp-content/uploads/2016/04/getintouch.jpg");
+	background: url("//dev-disinfect.c9users.io/wp-content/uploads/2016/04/getintouch.jpg") 50% no-repeat;
+	background-size: cover;
 }
-
-#aboutus .title-heading-center,
-#solutions .title-heading-center,
-#contactus .title-heading-center,
-#packages .title-heading-center {
-    color: #222222 !important;
+#aboutus .title-heading-center, #solutions .title-heading-center, #contactus .title-heading-center, #packages .title-heading-center {
+	color: #222222 !important;
 }
-#benefits .title-heading-center,
-#testimonials .title-heading-center{
-    color: #fff !important;
+#benefits .title-heading-center, #testimonials .title-heading-center {
+	color: #fff !important;
 }
-a#pri_btn:hover{
-   background:#ec592c !important;
+a#pri_btn:hover {
+	background: #ec592c !important;
 }
-
-#main{
-    padding-top: 0 !important;
+#main {
+	padding-top: 0 !important;
 }
-.fusion-pricing-table .panel-body .price .currency{
-    color:#fff !important;
+.fusion-pricing-table .panel-body .price .currency {
+	color: #fff !important;
 }
 ul.list-group li {
-    color: #fff !important;
+	color: #fff !important;
 }
-.fusion-pricing-table .panel-body .price .decimal-part{
-    color:#fff !important;
+.fusion-pricing-table .panel-body .price .decimal-part {
+	color: #fff !important;
 }
 sup.decimal-part, span.time {
-    color: #fff !important;
+	color: #fff !important;
 }
-
 ul#menu-footer_menu li {
-    padding: 4px 0px 4px 40px;
-    border: none;
+	padding: 4px 0px 4px 40px;
+	border: none;
 }
-
 ul#menu-footer_menu li a {
-    color: #fff !important;
-    transition: 0.3s;
+	color: #fff !important;
+	transition: 0.3s;
 }
-
 ul#menu-footer_menu li a:hover {
-    color: #ec592c !important;
+	color: #ec592c !important;
 }
-
-.to-top-container a#toTop:hover{
-    background:#ec592c !important;
+.to-top-container a#toTop:hover {
+	background: #ec592c !important;
 }
-
 a.custom-read-more {
-    margin-top: 20px;
-    float: left;
-    text-align: center;
-    width: 100%;
-    font-size: 22px;
-    color: #ec592c;
-    border: solid 1px #ec592c;
-    transition: 0.3s;
+	margin-top: 20px;
+	float: left;
+	text-align: center;
+	width: 100%;
+	font-size: 22px;
+	color: #ec592c;
+	border: solid 1px #ec592c;
+	transition: 0.3s;
 }
-
 a.custom-read-more:hover {
-    color: #fff !important;
-    background-color: #ec592c;
+	color: #fff !important;
+	background-color: #ec592c;
 }
-
 .fusion-pricing-table .list-group .list-group-item {
-    transition: 0.5s;
-    background-color: #212527;
+	transition: 0.5s;
+	background-color: #212527;
 }
-
 .fusion-pricing-table .list-group:hover .list-group-item {
-    background-color: #353535;
+	background-color: #353535;
 }
-
-form.wpcf7-form input, form.wpcf7-form textarea#msg{
-     background: rgb(246, 246, 246) none repeat scroll 0% 0% !important;
-     border-color:#dbdbdb !important;
-     padding: 15px 20px !important;
-     height: auto !important;
-     line-height: 14px !important;
+form.wpcf7-form input, form.wpcf7-form textarea#msg {
+	background: rgb(246, 246, 246) none repeat scroll 0% 0% !important;
+	border-color: #dbdbdb !important;
+	padding: 15px 20px !important;
+	height: auto !important;
+	line-height: 14px !important;
 }
 input#send {
-    background: #3c3f56 !important;
+	background: #3c3f56 !important;
 }
 input#send:hover {
-      background:#ec592c !important;      
+	background: #ec592c !important;
 }
-input.wpcf7-form-control.wpcf7-submit{
-      background: #3c3f56 !important;
+input.wpcf7-form-control.wpcf7-submit {
+	background: #3c3f56 !important;
 }
- input.wpcf7-form-control.wpcf7-submit:hover{
-      background:#ec592c !important;  
- }
- .fusion-social-networks .fusion-social-network-icon:hover{
-     color:#fff !important;
- }
- i.fa.fontawesome-icon.fa-envelope-o.circle-no.custom_link {
-    position: absolute;
-    top: 79.5%;
-    right: 54%;
+input.wpcf7-form-control.wpcf7-submit:hover {
+	background: #ec592c !important;
+}
+.fusion-social-networks .fusion-social-network-icon:hover {
+	color: #fff !important;
+}
+i.fa.fontawesome-icon.fa-envelope-o.circle-no.custom_link {
+	position: absolute;
+	top: 79.5%;
+	right: 54%;
 }
 p.input_fild_chimp input {
-    padding: 10px;
-    width: 80%;
-    color: #333;
-    font-size: 15px;
-    border: solid 1px #dbdbdb;
-}    
+	padding: 10px;
+	width: 80%;
+	color: #333;
+	font-size: 15px;
+	border: solid 1px #dbdbdb;
+}
 p.submit_btn_field input {
-    border: none;
-    padding: 11px 5px;
-    color: #fff;
-    background: #3c3f56;
-    width: 36%;
-    transition: 0.3s;
-    cursor: pointer;
+	border: none;
+	padding: 11px 5px;
+	color: #fff;
+	background: #3c3f56;
+	width: 36%;
+	transition: 0.3s;
+	cursor: pointer;
+}
+p.submit_btn_field input:hover {
+	background: #ec592c;
+}
+.searchform .search-table .search-button input[type="submit"] {
+	height: 42px !important;
+	width: 50px !important;
+	line-height: 40px !important;
+	background-color: #222222;
+	transition: 0.3s;
+}
+.searchform .search-table .search-button input[type="submit"]:hover {
+	background-color: #EC592C !important;
+}
+/* New Styling */
+.fusion-main-menu {
+    float:right !important;
+}
+.fusion-main-menu > ul > li > a{
+	font-size:15px !important;
+    text-transform:uppercase;
+}
+.fusion-imageframe {
+    box-shadow:none !important;
 }
 
-p.submit_btn_field input:hover{
-    background:#ec592c;
+#wrapper .search-table .search-field input {
+	border-color: #222222 !important;
+	background-color: #FFFFFF !important;
+	transition: 0.4s;
+}
+#wrapper .search-table .search-field input:hover {
+	/*border-color: #ec592c !important;*/
+}
+.fusion-sticky-shadow .fusion-logo {
+	margin: 5px 0;
 }
