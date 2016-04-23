@@ -1,0 +1,100 @@
+=== Minify HTML ===
+Contributors: teckel
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KBW83T5TRT2MG
+Tags: minify, minifer, minification, HTML, fast, faster, speed, performance, optimize, optimization, downloading, beautify, beautifier, sloppy, clean, cleaner, markup, compress, css, javascript
+Requires at least: 1.5
+Tested up to: 4.5
+Stable tag: 1.6
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Minify HTML output for clean looking markup and faster downloading.
+
+
+== Description ==
+
+Ever look at the HTML markup of your website and notice how sloppy and amateurish it looks? The Minify HTML plugin cleans up sloppy looking markup and minifies, which also speeds up download time.
+
+Make your website's markup look professional by using Minify HTML. Simple to use, simply install and activate.
+
+Does specialized minification to JavaScript and internal CSS. Doesn't mess with your textareas or preformatted text. Also removes HTML comments (leaving MSIE conditional comments).
+
+
+== Installation ==
+
+= For an automatic installation through WordPress: =
+
+1. Select **Add New** from the WordPress **Plugins** menu in the admin area.
+2. Search for **Minify HTML**.
+3. Click **Install Now**, then **Activate Plugin**.
+
+= For manual installation via FTP: =
+
+1. Upload the **minify-html-markup** folder to the **/wp-content/plugins/** directory.
+2. Activate the plugin from the **Plugins** screen in your WordPress admin area.
+
+= To upload the plugin through WordPress, instead of FTP: =
+
+1. From the **Add New** plugins page in your WordPress admin area, select the **Upload Plugin** button.
+2. Select the **minify-html-markup.zip** file, click **Install Now** and **Activate Plugin**.
+
+
+== Frequently Asked Questions ==
+
+= Are there any settings for Minify HTML? =
+
+No. All you need to do is install and activate the plugin and your HTML output will be minified. To turn it off, simply deactivate the plugin.
+
+= How does it work? =
+
+Magic, obviously! Actually, it creates an output buffer and then preforms its 'magic' on the output buffer. It kinda is like magic.
+
+= Will it break my stuff? =
+
+Normally, you won't notice any changes to the way the site looks in the browser. However, if you rely on white space between HTML tags (which you shouldn't be doing) you may notice very isolated elements with reduced horizontal spacing. This is because inline objects will add a few pixels of spacing if there's whitespace between the objects. I consider Minify HTML a good way of finding these style 'errors' and correcting them with proper padding or margin style.
+
+= Is it fast? =
+
+Plenty. On my server that's running dozens of websites, it takes 0.007 seconds to minify a page. Also, because the HTML file is smaller, it will speed up transfer and rendering times. Minify HTML doesn't use bloated external libraries that add additional overhead and therefore take longer to process.
+
+= How much smaller will my HTML be? =
+
+With real-world test sites, the HTML file is around 20-25% smaller. Even when using deflate/gzip compression the resulting file is around 20% smaller, speeding up download times. 
+
+= I'm using deflate/gzip to compress HTML, do I need Minify HTML? =
+
+With Minify HTML, the source HTML file will be smaller, therefore, it will compress faster and be even smaller once compressed. Also, even with deflate/gzip, your HTML markup will still look sloppy and amateurish. Minify HTML corrects this even for deflated/gzip transfers (and also saves another 20% in bandwidth).
+
+
+== Screenshots ==
+
+1. Activate the Minify HTML plugin.
+2. Minify HTML turns this...
+3. To this!
+
+
+== Changelog ==
+
+= v1.6 - 3/1/2016 =
+* Removes HTML comments to further reduce file size (doesn't remove MSIE conditional comments).
+
+= v1.5 - 2/23/2016 =
+* No longer minifies the admin dashboard.
+* Some additional JavaScript minification.
+
+= v1.4 - 2/23/2016 =
+* Fixed bug that could cause 'M1N1FY-ST4RT' to output to website.
+
+= v1.3 - 2/22/2016 =
+* Added compatibility for PHP 7.0.0
+
+= v1.2 - 2/22/2016 =
+* Compatible with older versions of PHP.
+* More effective at cleaning up tabs, JavaScript, and internal CSS.
+* Cleaned up source code and made a few performance tweaks.
+
+= v1.1 - 2/19/2016 =
+* Also minifies internal CSS.
+
+= v1.0 - 2/18/2016 =
+* Initial release.
