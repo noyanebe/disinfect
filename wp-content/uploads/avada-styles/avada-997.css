@@ -29,3 +29,7 @@ background-position: top center;
 .fusion-testimonials.clean blockquote q{font-style:normal;letter-spacing:2px; font-size: 20px; line-height: 40px;}
 /* AVADA BLOCKQUOTE - name of the person providing quote - no styling options*/
 .fusion-testimonials.clean .author{letter-spacing:4px;}
+.fusion-li-item-content {
+    COLOR: #FFF;
+    FONT-SIZE: 24PX;
+}
