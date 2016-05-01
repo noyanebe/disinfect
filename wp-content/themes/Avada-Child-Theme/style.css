@@ -19,7 +19,6 @@ Text Domain:  Avada
 .get_in_title h1 {
 	color: #ec592c !important;
 	font-size: 60px !important;
-	;
 }
 .para_one {
 	font-size: 23px;
@@ -97,11 +96,9 @@ a:hover {
 .fusion-main-menu {
 	float: left !important;
 	margin-left: 13%;
-	margin-top: 4%;
+	margin-top: 3%;
 }
-.fusion-sticky-shadow .fusion-main-menu {
-	margin: 0px 0px 0px 10% !important;
-}
+
 .fusion-sticky-shadow li a {
 	padding: 0px 0px 0px 20px !important;
 }
@@ -302,9 +299,7 @@ p.submit_btn_field input:hover {
 .fusion-main-menu {
     float:right !important;
 }
-.fusion-sticky-shadow .fusion-main-menu {
-    margin-top:0 !important;
-}
+
 .fusion-main-menu > ul > li > a{
 	font-size:15px !important;
     text-transform:uppercase;
@@ -329,7 +324,7 @@ p.submit_btn_field input:hover {
     line-height: 28px;
 }
 #whyuse h1.title-heading-center {
-    color:#ffffff !important; 
+    color:#222 !important; 
 }
 #whyuse .fusion-imageframe {
     border:10px solid #ffffff;
@@ -406,16 +401,48 @@ a.fusion-button:hover, a.fusion-button:hover span.fusion-button-text{
 .fusion-pricing-table .panel-footer {
     padding:0;
 }
-.fusion-header.fusion-sticky-shadow {
-    -webkit-background:rgba(236,89,44,0.85) !important;
-    -moz-background:rgba(236,89,44,0.85) !important;
-    -ms-background:rgba(236,89,44,0.85) !important;
-    -o-background:rgba(236,89,44,0.85) !important;
-    background:rgba(236,89,44,0.85) !important;
+.fusion-header {
+    -webkit-background:rgba(27,29,43,0.95) !important;
+    -moz-background:rgba(27,29,43,0.95) !important;
+    -ms-background:rgba(27,29,43,0.95) !important;
+    -o-background:rgba(27,29,43,0.95) !important;
+    background:rgba(27,29,43,0.95) !important;
 }
+.fusion-main-menu {
+    margin-top:20px;
+}
+.fusion-header-wrapper.fusion-is-sticky .fusion-main-menu {
+    margin-top:15px;
+}
+.fusion-header.fusion-header-backface {
+    height:auto !important;
+}
+.fusion-slider-997 h2.title-heading-left {
+    color:#656673 !important;
+}
+.fusion-slider-997 h3.title-heading-left {
+    color:#1a1a1a !important;
+}
+.fusion-slider-997 a.fusion-button, #benefits + div.fusion-section-separator a.fusion-button{
+    color:#1B1D2B !important;
+    border:1px solid #1B1D2B !important;
+}
+    .fusion-slider-997 a.fusion-button span, #benefits + div.fusion-section-separator a.fusion-button span{
+        color:#1B1D2B !important;
+    }
+    .fusion-slider-997 a.fusion-button:hover, #benefits + div.fusion-section-separator a.fusion-button:hover{
+        background:#1B1D2B !important;
+    }
+        .fusion-slider-997 a.fusion-button:hover span, #benefits + div.fusion-section-separator a.fusion-button:hover span{
+            color:#ffffff !important;
+        }
 #benefits .fusion-column-wrapper.fusion-animated > p {
     position:relative;
     padding-left:40px;
+}
+
+.fusion-logo {
+    margin:18px 0 !important;
 }
 #benefits .fusion-column-wrapper.fusion-animated > p:before{
     width:30px;
@@ -496,4 +523,37 @@ a.siteCta {
 .fusion-is-sticky .fusion-logo img {
     height: 40px !important;
     margin-top: 0px;
+}
+ul#check_about .fusion-li-item-content {
+    color: #000;
+}
+.services_title {
+    margin-bottom: 0px !important;
+}
+.solu .fusion-content-boxes .content-wrapper-background {
+    padding:0px 0px 20px 0px !important;
+}
+a#btn3 {
+    margin-top: 29px  !important;
+}
+a#btn4 {
+    margin-top: 47px  !important;
+}
+.call-to-action-2 {
+    background: transparent !important;
+}
+.call-to-action-3 {
+    background: transparent !important;
+}
+.call-to-action-1 {
+    background: transparent !important;
+    border: solid 2px #fff !important;
+}
+ul#use_dis li .fusion-li-item-content{
+    color:#222222 !important;
+}
+@media only screen and (min-width : 320px) and (max-width : 568px) {
+h1.title-heading-center{
+    font-size: 38px !important
+}
 }
